@@ -4,11 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Empusa Ps4 Host (fw selection) - [v1.1.0]</title>
-
-  <link rel="stylesheet" href="assets/helpers.css" />
-  <link rel="stylesheet" href="assets/site.css" />
-
+  <title>WELCOME TO EMPUSA EXPLOIT HOST, PLEASE ENJOY</title>
+  <link rel="stylesheet" href="assets/helpers.css">
+  <link rel="stylesheet" href="assets/site.css">
 </head>
 
 <body>
@@ -16,47 +14,54 @@
     setInterval((function() {
       var e = new Date;
       Hour = e.getHours(), Minute = e.getMinutes(),
-        Minute < 10 && (Minute = "0" + Minute),
-        Hour < 10 && (Hour = "0" + Hour),
-        document.getElementById("clock").innerHTML = Hour + ":" + Minute
+        Minute < 10 && (Minute = "0" + Minute), Hour < 10 && (Hour = "0" + Hour),
+        document.getElementById("clock").innerHTML = Hour + ":" + Minute;
     }), 0);
   </script>
-  <div class="topnav">
-    <div class="border-top"></div>
-
-    <div class="topnav-centered">
-      <a class="title" style="font-size:40px;">Empusa ps4 host</a>
-    </div>
-    <a id="date">5/27/22</a>
-    <div class="topnav-right">
-      <a id="clock">12:03</a>
+  <div id="splash-main">
+    <div id="content">
+      <span id="splash-arabic">أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا ٱللَّٰهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا رَسُولُ ٱللَّٰهِ وَأَشْهَدُ أَنَّ عَلِيًّا وَلِيُّ ٱللَّٰهِ</span><br>
+      <img src="assets/Mosque02.svg" id="splashimg" alt="Mosque02"><br>
+      <span id="splash-welcome">WELCOME TO EMPUSA PS4 HOST</span>
     </div>
   </div>
-  <br>
-  <br>
-  <br>
-  <h2 style="text-align: center;font-size:25px;padding:10px 0px;">Please select your current firmware</h1>
-    <div class="container">
-      <button type="button" class="btn dark" onclick="window.location.href ='672/index.html';">6.72</button>
-      <button type="button" class="btn dark" onclick="window.location.href ='672/indexL.html';">6.72(<span style="color:#2ecc71;">Lite</span>)</button>
-
+  <div class="topnav">
+    <div class="border-top"></div>
+    <div class="topnav-centered">
+      <a class="title">Empusa ps4 host</a>
+    </div><a id="date">‏‏‎ ‎</a>
+    <div class="topnav-right">
+      <a id="clock">‏‏‎ ‎</a>
     </div>
-    <div class="premium-banner">
-      <div class="banneroverlay"></div>
-      <a href="/premium">
-        <div class="col">
-          <span class="vip-icon" style="font-size:30px;color:#cb356b;">❤</span>
-        </div>
-        <div class="col">
-          <h3>This website was designed, coded, and posted with love by AzharCQ.</h3>
-          <p>Inspired by Karo Sharifi's Host at Karo218.ir or Kar0218.github.io</p>
-        </div>
-        <div class="col">
-          <span class="vip-icon" style="font-size:30px;color:#cb356b;">❤</span>
-        </div>
-      </a>
-      <div class="border-top"></div>
-    </div>
+  </div>
+  <div class="topnav-info" id="status">
+    Please Select ur Console Firmware.
+  </div><br>
+  <br>
+  <br>
+  <div class="container">
+    <button type="button" class="btn dark" onclick="window.location.href ='672/index.html';">6.72 FULL</button>
+    <button type="button" class="btn dark" onclick="window.location.href ='672/indexL.html';">6.72 LITE</button>
+  </div>
+  <div class="premium-banner" style="z-index: 0;">
+    <div class="banneroverlay"></div><a>
+      <div class="col">
+        <h3>This website was designed, coded, and posted with love by AzharCQ.</h3>
+        <p>Inspired by Karo Sharifi's Host at Karo218.ir or Kar0218.github.io</p>
+      </div>
+    </a>
+    <div class="border-top"></div>
+  </div>
+  <script>
+    function SplashScreen(time) {
+      let cc = document.getElementById("splash-main");
+      cc.style.display = "block";
+      setTimeout(function() {
+        cc.style.display = "none";
+      }, time);
+    }
+    SplashScreen(5000);
+  </script>
 </body>
 
 </html>
