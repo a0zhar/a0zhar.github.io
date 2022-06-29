@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Empusa Ps4 Host (fw selection) - [v1.1.0]</title>
+
+  <link rel="stylesheet" href="assets/helpers.css" />
+  <link rel="stylesheet" href="assets/site.css" />
+
+</head>
+
+<body>
+  <script type="text/javascript">
+    setInterval((function() {
+      var e = new Date;
+      Hour = e.getHours(), Minute = e.getMinutes(),
+        Minute < 10 && (Minute = "0" + Minute),
+        Hour < 10 && (Hour = "0" + Hour),
+        document.getElementById("clock").innerHTML = Hour + ":" + Minute
+    }), 0);
+  </script>
+  <div class="topnav">
+    <div class="border-top"></div>
+
+    <div class="topnav-centered">
+      <a class="title" style="font-size:40px;">Empusa ps4 host</a>
+    </div>
+    <a id="date">5/27/22</a>
+    <div class="topnav-right">
+      <a id="clock">12:03</a>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <h2 style="text-align: center;font-size:25px;padding:10px 0px;">Please select your current firmware</h1>
+    <div class="container">
+      <button type="button" class="btn dark" onclick="window.location.href ='672/index.html';">6.72</button>
+      <button type="button" class="btn dark" onclick="window.location.href ='672/indexL.html';">6.72(<span style="color:#2ecc71;">Lite</span>)</button>
+
+    </div>
+    <div class="premium-banner">
+      <div class="banneroverlay"></div>
+      <a href="/premium">
+        <div class="col">
+          <span class="vip-icon" style="font-size:30px;color:#cb356b;">❤</span>
+        </div>
+        <div class="col">
+          <h3>This website was designed, coded, and posted with love by AzharCQ.</h3>
+          <p>Inspired by Karo Sharifi's Host at Karo218.ir or Kar0218.github.io</p>
+        </div>
+        <div class="col">
+          <span class="vip-icon" style="font-size:30px;color:#cb356b;">❤</span>
+        </div>
+      </a>
+      <div class="border-top"></div>
+    </div>
+</body>
+
+</html>
