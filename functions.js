@@ -25,7 +25,8 @@ function runSerotonin(self) {
       window.pl_blob_len = "0x" + binSize.toString(16);
       window.pl_blob = malloc(window.pl_blob_len);
       write_mem(window.pl_blob, payload);
-      addScriptFile("misc/loader.js", "loader", 100);
+      printf("adding loader");
+      addScriptFile("misc/loader.js", "loader", 0);
     }
   };
   xhr.send();
