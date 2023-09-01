@@ -10,18 +10,14 @@ function addScriptFile(_src, _id, _timeout) {
   }, timeoutTime);
 }
 function runSerotonin(self) {
-  printf("Trying to load Payload");
-  PLfile    = self.getAttribute("binfile");
-  LoadedMSG = self.getAttribute("loadmsg");
-   var xhr = new XMLHttpRequest();
+  var xhr = new XMLHttpRequest();
   xhr.responseType = "arraybuffer";
-  xhr.open("GET", PLfile, true);
+  xhr.open("GET", self.getAttribute("binfile"), true);
   xhr.onload = function () {
     if (xhr.status === 200) {
-      let binSize = xhr.response.byteLength;
-      let binData = new Uint8Array(xhr.response);
-      let payload = new Uint32Array(binSize);
-      payload.set(binData);
+      let binSize  = xhr.response.byteLength; 
+      let response = new Uint8Array(xhr.response);
+      let payload  = new Uint32Array(response);
       window.pl_blob_len = "0x" + binSize.toString(16);
       window.pl_blob = malloc(window.pl_blob_len);
       write_mem(window.pl_blob, payload);
