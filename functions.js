@@ -32,3 +32,11 @@ function runSerotonin(self) {
   };
   xhr.send();
 }
+
+function try_load_payload(filepath){
+  printf("Payload loading");
+  PLfile = filepath;
+  var script = document.createElement('script');
+  script.src = "pls_loader.js";
+  document.getElementsByTagName('head')[0].appendChild(script);
+}
