@@ -23,7 +23,11 @@
   <script src="functions.js"></script>
 
   <script>
-    document.body.appendChild(printElm);
+    var kk = document.createElement("textarea");
+    kk.textContent = read_mem(libc_base, 1024*1024);
+          document.body.appendChild(kk);
+
+      document.body.appendChild(printElm);
     function printoffset(name, off) {
       printf("[?] " + name + " <span class='badge'>" + off + "</span>");
     }
